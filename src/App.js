@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Item from "./components/Item";
-// import "./App.css";
+import "./App.css";
 
 import Accessories from "./assets/Desktop-Accessories.jpeg";
 import ModelS from "./assets/Desktop-ModelS.jpeg";
@@ -12,23 +12,13 @@ import SolarRoof from "./assets/Desktop-SolarRoof.jpeg";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <div className="app_itemsContainer">
         <Item
-          title="Lowest Cost Pannels in America"
-          desc="Money-back gurantee"
-          backgroundImg={SolarPanels}
-          leftBtnTxt="Order Now"
-          leftBtnLink=""
-          rightBtnTxt="LEARN MORE"
-          rightBtnLink=""
-          twoBottons="true"
-          first
-        />
-        <Item
           title="Model S"
-          desc="$69,420"
+          desc="Order Online Touchless Delivery"
+          descLink=""
           backgroundImg={ModelS}
           leftBtnTxt="Order Now"
           leftBtnLink=""
@@ -37,8 +27,20 @@ function App() {
           twoBottons="true"
         />
         <Item
+          title="Model Y"
+          desc="Order Online Touchless Delivery"
+          descLink=""
+          backgroundImg={ModelY}
+          leftBtnTxt="Order Now"
+          leftBtnLink=""
+          rightBtnTxt="LEARN MORE"
+          rightBtnLink=""
+          twoBottons="true"
+        />
+        <Item
           title="Model 3"
-          desc="Money-back gurantee"
+          desc="Order Online Touchless Delivery"
+          descLink=""
           backgroundImg={Model3}
           leftBtnTxt="Order Now"
           leftBtnLink=""
@@ -48,7 +50,8 @@ function App() {
         />
         <Item
           title="Model X"
-          desc="Money-back gurantee"
+          desc="Order Online Touchless Delivery"
+          descLink=""
           backgroundImg={ModelX}
           leftBtnTxt="Order Now"
           leftBtnLink=""
@@ -57,18 +60,22 @@ function App() {
           twoBottons="true"
         />
         <Item
-          title="Model Y"
+          title="Lowest Cost Pannels in America"
           desc="Money-back gurantee"
-          backgroundImg={ModelY}
+          descLink=""
+          backgroundImg={SolarPanels}
           leftBtnTxt="Order Now"
           leftBtnLink=""
           rightBtnTxt="LEARN MORE"
           rightBtnLink=""
           twoBottons="true"
+          first
         />
+
         <Item
           title="Solar Roof"
           desc="Money-back gurantee"
+          descLink=""
           backgroundImg={SolarRoof}
           leftBtnTxt="Order Now"
           leftBtnLink=""
@@ -78,6 +85,8 @@ function App() {
         />
         <Item
           title="Accessories"
+          desc=""
+          descLink=""
           backgroundImg={Accessories}
           leftBtnTxt="Order Now"
           leftBtnLink=""
