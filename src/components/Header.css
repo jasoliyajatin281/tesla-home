@@ -31,11 +31,13 @@
 }
 
 .header_right{
+    margin-right: 15px;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
 }
 
 .header_right>p{
+    
     margin: 10px;
 }
